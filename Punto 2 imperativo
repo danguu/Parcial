@@ -1,0 +1,21 @@
+def bubble_sort(students):
+    n = len(students)
+    for i in range(n - 1):
+        for j in range(n - i - 1):
+            if students[j][1] < students[j + 1][1]:
+                students[j], students[j + 1] = students[j + 1], students[j]
+            elif students[j][1] == students[j + 1][1] and students[j][0] > students[j + 1][0]:
+                students[j], students[j + 1] = students[j + 1], students[j]
+    return students
+
+# Ejemplo ouo
+estudiantes = [
+    ("Juan", 85),
+    ("Daniel", 92),
+    ("samuel", 92),
+    ("Mari", 78),
+    ("Luis", 85)
+]
+
+estudiantes_ordenados = bubble_sort(estudiantes)
+print(estudiantes_ordenados)
