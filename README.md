@@ -1,4 +1,4 @@
-# Parcial
+# Parcial Daniel Ayala Guzmán 
 
 ##Punto 1
 
